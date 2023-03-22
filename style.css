@@ -1,0 +1,418 @@
+/* For Jusst Tamil */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.1s ease-in;
+}
+:root{
+    --black: #000;
+    --white: #fff;
+    --theme: #38E892;
+    --secondary: #7FA5FF;
+    --tertiary: #FE9900;
+    --gradient: linear-gradient(to right top, #a9f1df, #c4e7bb, #e2d8a6, #f9c8a7, #ffbbbb);
+    --poppins: 'Poppins', sans-serif;
+    --courgette: 'Courgette', cursive;
+    --satisfy: 'Satisfy', cursive;
+}
+body{
+  font-family: var(--poppins);
+  background-color: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+#navbar{
+  width: 100vw;
+  min-height: 10vh;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+#navLogoSection{
+  display: flex;
+  max-width: fit-content;
+  align-items: center;
+}
+#logo{
+  max-height: 10vh;
+}
+#logoTitle{
+  font-size: clamp(1em, 30px, 3em);
+  font-family: var(--poppins);
+}
+#navLinksSection{
+  width: 55vw;
+  margin-block: auto;
+}
+#linkList{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.linkText{
+  color: var(--white);
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--poppins);
+}
+.navlink1::before{
+  font-family: "Material Icons";
+  content: "home";
+  position: relative;
+  color: var(--white);
+  right: 5px;
+  top: 2px;
+  font-weight: 600;
+}
+.navlink2::before{
+  font-family: "Material Icons";
+  content: "description";
+  position: relative;
+  color: var(--white);
+  right: 5px;
+  top: 2px;
+  font-weight: 600;
+}
+.navlink3::before{
+  font-family: "Material Icons";
+  content: "video_library";
+  position: relative;
+  color: var(--white);
+  right: 5px;
+  top: 2px;
+  font-weight: 600;
+}
+.navlink4::before{
+  font-family: "Material Icons";
+  content: "feed";
+  position: relative;
+  color: var(--white);
+  right: 5px;
+  top: 2px;
+  font-weight: 600;
+}
+.navlink5::before{
+  font-family: "Material Icons";
+  content: "contact_page";
+  position: relative;
+  color: var(--white);
+  right: 5px;
+  top: 2px;
+  font-weight: 600;
+}
+.linkText:hover{
+  background-color: var(--tertiary);
+}
+#menu-div{
+  display: none;
+  padding: 10px;
+}
+/* the below code is by Satvik Popil */
+/* Copyright (c) 2023 by Satvik Popli (https://codepen.io/satvikpopli/pen/ExEZqaz) */
+.menu-items {
+  text-align: center;
+  position: absolute;
+  padding: 5rem;
+  margin-top: -6rem;
+  margin-left: -1rem;
+  top: 5.7rem;
+  right: 1.5rem;
+  list-style: none;
+  opacity: 0;
+  font-size: 2rem;
+  border: 4px solid black;
+  background-color: black;
+  border-radius: 0.25em;
+  transform: translateX(-10%);
+  transition: transform 100ms ease-in-out, opacity 200ms;
+}
+
+.menu-items li{
+  color: white;
+  padding: 0.5rem;
+  font-family: var(--poppins);
+}
+
+.menu-items li a{
+  color: white;
+  text-decoration: none;
+}
+
+.menu-items li a:hover{
+  color: rgb(174, 174, 174);
+}
+
+.check {
+  position: absolute;
+  top: 2vh;
+  right: 2.5rem;
+  height: 3rem;
+  width: 3rem;
+  opacity: 0;
+  z-index: 3;
+}
+
+.check:hover {
+  cursor: pointer;
+}
+
+.check:checked~.menu-items {
+  display: block;
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.ham-menu {
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: 2vh;
+  right: 2.5rem;
+  padding: 0.5rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+  border-radius: 0.25em;
+}
+
+.ham-menu .line {
+  background-color: white;
+  border-radius: 1em;
+  width: 2rem;
+  height: 0.25rem;
+}
+
+.ham-menu .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 100ms ease-in-out;
+}
+
+.ham-menu .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 100ms ease-in-out;
+}
+
+.check:checked~.ham-menu .line1 {
+  display: block;
+  transform: rotate(45deg);
+}
+
+.check:checked~.ham-menu .line2 {
+  opacity: 0;
+}
+
+.check:checked~.ham-menu .line3 {
+  display: block;
+  transform: rotate(-45deg);
+}
+/* Copyright (c) 2023 by Satvik Popli (https://codepen.io/satvikpopli/pen/ExEZqaz) */
+/* the above code is by Satvik Popli */
+
+.hero-section{
+  background-image: var(--gradient);
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.box{
+  max-width: 80%;
+  background-color: var(--black);
+  min-height: 80%;
+  color: var(--white);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero-txt{
+  color: var(--white);
+  font-family: var(--poppins);
+  padding: 5px;
+}
+.hero-title{
+  color: var(--theme);
+  text-decoration: none;
+  font-family: var(--satisfy);
+  font-size: 3rem;
+}
+.button{
+  color: var(--white);
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--tertiary);
+  border-radius: 5px;
+  font-weight: 900;
+  font-family: var(--poppins);
+  font-size: 1rem;
+  border: none;
+}
+#about, #video, #article, #contact{
+  min-height: 100vh;
+}
+.abt-title{
+  font-family: var(--courgette);
+  font-size: 4em;
+  color: var(--secondary);
+}
+.abt-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+  align-items: center;
+  padding: 10px;
+  gap: 3rem;
+}
+.abt-text{
+  width: 80%;
+}
+.video-cont{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 90vh;
+  align-items: center;
+  padding: 10px;
+}
+.video-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.chl-link{
+  color: var(--theme);
+  padding: 10px;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.video-text{
+  width: 40%;
+}
+.video-img{
+  width: 50%;
+}
+.blog-cont{
+  min-height: 5vh;
+  padding: 5px;
+  width: 80%;
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  color: var(--black);
+  font-weight: 700;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.blog-button{
+  color: var(--black);
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: var(--tertiary);
+}
+.more-article a{
+  color: var(--white);
+}
+.contact-details, .contact-form{
+  width: 40%;
+}
+.contact-apps{
+  list-style: none;
+}
+.contact-app-cont, .contact-app-cont a{
+  display: flex;
+  color: var(--white);
+  align-items: center;
+  gap: 1rem;
+}
+.contact-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contact-form{
+  display: flex;
+  height: 60%;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: justify;
+  align-items: center;
+}
+#contact-form .input-field{
+ width: 80%;
+ border: none;
+ border-radius: 3px;
+ color: var(--white);
+ font-size: 1rem;
+ border-bottom: 3px solid var(--white);
+ background-color: transparent;
+ font-family: var(--poppins);
+ font-weight: 500;
+}
+.submit-btn{
+  padding: 10px;
+  font-weight: 700;
+  background-color: var(--theme);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+.submit-btn::before{
+  font-family: "Material Icons";
+  content: "send";
+  padding: 3px;
+  position: relative;
+  top: 1px;
+  font-weight: 700;
+}
+.credits{
+  display: flex;
+  flex-direction: row;
+}
+.credits>div>a{
+  color: var(--white);
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #navLinksSection{
+    display: none;
+  }
+  #menu-div{
+    display: flex;
+    align-items: center;
+  }
+  .video-cont{
+    flex-direction: column-reverse;
+  }
+  .video-img, .video-text{
+    width: 100%;
+  }
+  .blog-download{
+    display: none;
+  }
+  #contact-form{
+    width: 100%;
+  }
+  .credits{
+    flex-direction: column;
+  }
+}
+
