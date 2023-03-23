@@ -125,7 +125,7 @@ body{
   top: 5.7rem;
   right: 1.5rem;
   list-style: none;
-  opacity: 0;
+  visibility: hidden;
   font-size: 2rem;
   border: 4px solid black;
   background-color: black;
@@ -166,7 +166,7 @@ body{
 .check:checked~.menu-items {
   display: block;
   transform: translateX(0%);
-  opacity: 1;
+  visibility: visible;
 }
 
 .ham-menu {
