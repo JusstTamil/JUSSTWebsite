@@ -266,4 +266,7 @@ figure{
     display: flex;
     align-items: center;
   }
+  figure img{
+    width: 50%  
+  }
 }
