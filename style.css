@@ -98,6 +98,15 @@ body{
   top: 2px;
   font-weight: 600;
 }
+.navlink6::before{
+  font-family: "Material Icons";
+  content: "download";
+  position: relative;
+  color: var(--white);
+  right: 5px;
+  top: 2px;
+  font-weight: 600;
+}
 .navlink5::before{
   font-family: "Material Icons";
   content: "contact_page";
