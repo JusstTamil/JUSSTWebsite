@@ -16,6 +16,9 @@
     --courgette: 'Courgette', cursive;
     --satisfy: 'Satisfy', cursive;
 }
+html{
+  scroll-behavior: smooth; 
+}
 body{
   font-family: var(--poppins);
   background-color: var(--black);
