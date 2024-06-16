@@ -402,6 +402,15 @@ body{
   color: var(--white);
 }
 
+.dialog{
+  text-align: center;
+  width: 100vw;
+  position: sticky;
+  padding: 10px;
+  font-size: 1.2rem;
+  background: #000;
+  bottom: 1px
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
